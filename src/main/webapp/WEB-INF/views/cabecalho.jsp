@@ -23,18 +23,18 @@
 					<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">
 							<fmt:message key="menu.sobre" />
 					</a></li>
-					<li><a href="?locale=pt" rel="nofollow">
-							<fmt:message key="menu.pt" />
-					</a></li>
-					<li><a href="?locale=en_US" rel="nofollow">
-							<fmt:message key="menu.en" />
-					</a></li>
 					<security:authorize access="isAuthenticated()">
 						<li><a href="${s:mvcUrl('PC#listar').build()}">Lista de
 								Produtos</a></li>
 						<li><a href="${s:mvcUrl('PC#form').build()}">Cadastro de
 								Produtos</a></li>
 					</security:authorize>
+					<li><a href="?locale=pt" rel="nofollow">
+							<fmt:message key="menu.pt" />
+					</a></li>
+					<li><a href="?locale=en_US" rel="nofollow">
+							<fmt:message key="menu.en" />
+					</a></li>
 				</ul>
 			</nav>
 		</div>

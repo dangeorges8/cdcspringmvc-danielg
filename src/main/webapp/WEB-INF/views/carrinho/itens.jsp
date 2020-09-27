@@ -7,6 +7,8 @@
 	prefix="security"%>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags"%>
 
+<c:url value="/" var="contextPath"/>
+
 <tags:pageTemplate titulo="Seu Carrinho de Compras">
 
 	<jsp:attribute name="extraScripts">
@@ -54,7 +56,7 @@
 									action="${s:mvcUrl('CCC#remover').arg(0,item.produto.id).arg(1,item.tipoPreco).build() }"
 									method="POST">
 							<input type="image"
-										src="/casadocodigo/resources/imagens/excluir.png"
+										src="${contextPath}resources/imagens/excluir.png"
 										alt="Excluir" title="Excluir" />
 						</form:form></td>
 				</tr>
