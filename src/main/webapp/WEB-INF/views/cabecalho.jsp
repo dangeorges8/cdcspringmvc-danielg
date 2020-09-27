@@ -2,10 +2,16 @@
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="security"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<c:url value="/" var="contextPath" />
 
 <header id="layout-header">
 	<div class="clearfix container">
-		<a href="/casadocodigo/" id="logo"> </a>
+	
+		<a href="${contextPath}">
+			<img id="logo" alt="Logo" src="${contextPath}resources/imagens/cdc-logo.svg"> 
+		</a>
 		<div id="header-content">
 			<nav id="main-nav">
 
